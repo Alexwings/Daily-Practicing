@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Day_6_Assignment
+//  Switch&Stepper
 //
-//  Created by Xinyuan Wang on 11/16/16.
+//  Created by Xinyuan Wang on 11/18/16.
 //  Copyright © 2016 RJT. All rights reserved.
 //
 

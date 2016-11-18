@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Day7_Assignment
+//  Switch&Picker
 //
-//  Created by Xinyuan Wang on 11/17/16.
+//  Created by Xinyuan Wang on 11/18/16.
 //  Copyright © 2016 RJT. All rights reserved.
 //
 
