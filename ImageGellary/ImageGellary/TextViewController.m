@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (strong, nonatomic)UIImagePickerController *picker;
 
 - (IBAction)clickToSave:(UIButton *)sender;
 

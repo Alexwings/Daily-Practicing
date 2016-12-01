@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
-
+@property (nonatomic, strong) UIImagePickerController *picker;
 
 
 - (IBAction)SelectImageToSave:(UIButton *)sender;
@@ -98,12 +98,6 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-#pragma mark - UIViewControllerRestoration
--(void)encodeRestorableStateWithCoder:(NSCoder *)coder{
-    [coder encodeObject:self.filename forKey:viewControllerEncoderKey];
-    [super encodeRestorableStateWithCoder:coder];
 }
 
 -(void)decodeRestorableStateWithCoder:(NSCoder *)coder{

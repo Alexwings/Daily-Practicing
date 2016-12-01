@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TextViewController.h"
 
-@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIViewControllerRestoration, SaveImageNameDelegate>
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, SaveImageNameDelegate>
 
 @property (strong, nonatomic)NSString *filename;
 

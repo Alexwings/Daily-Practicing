@@ -12,6 +12,7 @@
 		E859133A1DE239C800C6A70C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85913381DE239C800C6A70C /* Main.storyboard */; };
 		E859133C1DE239C800C6A70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E859133B1DE239C800C6A70C /* Assets.xcassets */; };
 		E859133F1DE239C800C6A70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E859133D1DE239C800C6A70C /* LaunchScreen.storyboard */; };
+		E860707B1DED3B38006668B3 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860707A1DED3B38006668B3 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E859133B1DE239C800C6A70C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E859133E1DE239C800C6A70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E85913401DE239C800C6A70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E860707A1DED3B38006668B3 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E85913341DE239C800C6A70C /* AppDelegate.swift */,
 				E85913361DE239C800C6A70C /* FaceViewController.swift */,
+				E860707A1DED3B38006668B3 /* FaceView.swift */,
 				E85913381DE239C800C6A70C /* Main.storyboard */,
 				E859133B1DE239C800C6A70C /* Assets.xcassets */,
 				E859133D1DE239C800C6A70C /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				E85913371DE239C800C6A70C /* FaceViewController.swift in Sources */,
 				E85913351DE239C800C6A70C /* AppDelegate.swift in Sources */,
+				E860707B1DED3B38006668B3 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				E85913451DE239C800C6A70C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

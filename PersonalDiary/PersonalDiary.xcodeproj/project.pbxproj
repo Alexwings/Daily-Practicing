@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8A41B581DE8CDF500AA9806 /* DiaryContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A41B571DE8CDF500AA9806 /* DiaryContentController.m */; };
+		E8DBCD3B1DEE2B9200D3EAE6 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBCD3A1DEE2B9200D3EAE6 /* Utils.m */; };
+		E8FAE94E1DE6E60F00FE91A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FAE94D1DE6E60F00FE91A6 /* main.m */; };
+		E8FAE9511DE6E60F00FE91A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FAE9501DE6E60F00FE91A6 /* AppDelegate.m */; };
+		E8FAE9541DE6E60F00FE91A6 /* DiaryBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FAE9531DE6E60F00FE91A6 /* DiaryBookController.m */; };
+		E8FAE9571DE6E60F00FE91A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FAE9551DE6E60F00FE91A6 /* Main.storyboard */; };
+		E8FAE9591DE6E60F00FE91A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FAE9581DE6E60F00FE91A6 /* Assets.xcassets */; };
+		E8FAE95C1DE6E60F00FE91A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FAE95A1DE6E60F00FE91A6 /* LaunchScreen.storyboard */; };
+		E8FAE9661DE6E8BE00FE91A6 /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FAE9651DE6E8BE00FE91A6 /* Diary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8A41B561DE8CDF500AA9806 /* DiaryContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryContentController.h; sourceTree = "<group>"; };
+		E8A41B571DE8CDF500AA9806 /* DiaryContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryContentController.m; sourceTree = "<group>"; };
+		E8DBCD391DEE2B9200D3EAE6 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		E8DBCD3A1DEE2B9200D3EAE6 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		E8FAE9491DE6E60F00FE91A6 /* PersonalDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FAE94D1DE6E60F00FE91A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8FAE94F1DE6E60F00FE91A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8FAE9501DE6E60F00FE91A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8FAE9521DE6E60F00FE91A6 /* DiaryBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaryBookController.h; sourceTree = "<group>"; };
+		E8FAE9531DE6E60F00FE91A6 /* DiaryBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryBookController.m; sourceTree = "<group>"; };
+		E8FAE9561DE6E60F00FE91A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8FAE9581DE6E60F00FE91A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8FAE95B1DE6E60F00FE91A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8FAE95D1DE6E60F00FE91A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8FAE9641DE6E8BE00FE91A6 /* Diary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Diary.h; path = Model/Diary.h; sourceTree = "<group>"; };
+		E8FAE9651DE6E8BE00FE91A6 /* Diary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Diary.m; path = Model/Diary.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8FAE9461DE6E60F00FE91A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8FAE9401DE6E60F00FE91A6 = {
+			isa = PBXGroup;
+			children = (
+				E8FAE94B1DE6E60F00FE91A6 /* PersonalDiary */,
+				E8FAE94A1DE6E60F00FE91A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8FAE94A1DE6E60F00FE91A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8FAE9491DE6E60F00FE91A6 /* PersonalDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8FAE94B1DE6E60F00FE91A6 /* PersonalDiary */ = {
+			isa = PBXGroup;
+			children = (
+				E8FAE9631DE6E89E00FE91A6 /* Model */,
+				E8FAE94F1DE6E60F00FE91A6 /* AppDelegate.h */,
+				E8FAE9501DE6E60F00FE91A6 /* AppDelegate.m */,
+				E8FAE9521DE6E60F00FE91A6 /* DiaryBookController.h */,
+				E8FAE9531DE6E60F00FE91A6 /* DiaryBookController.m */,
+				E8A41B561DE8CDF500AA9806 /* DiaryContentController.h */,
+				E8A41B571DE8CDF500AA9806 /* DiaryContentController.m */,
+				E8FAE9551DE6E60F00FE91A6 /* Main.storyboard */,
+				E8FAE9581DE6E60F00FE91A6 /* Assets.xcassets */,
+				E8FAE95A1DE6E60F00FE91A6 /* LaunchScreen.storyboard */,
+				E8FAE95D1DE6E60F00FE91A6 /* Info.plist */,
+				E8FAE94C1DE6E60F00FE91A6 /* Supporting Files */,
+			);
+			path = PersonalDiary;
+			sourceTree = "<group>";
+		};
+		E8FAE94C1DE6E60F00FE91A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8FAE94D1DE6E60F00FE91A6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8FAE9631DE6E89E00FE91A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8FAE9641DE6E8BE00FE91A6 /* Diary.h */,
+				E8FAE9651DE6E8BE00FE91A6 /* Diary.m */,
+				E8DBCD391DEE2B9200D3EAE6 /* Utils.h */,
+				E8DBCD3A1DEE2B9200D3EAE6 /* Utils.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8FAE9481DE6E60F00FE91A6 /* PersonalDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8FAE9601DE6E60F00FE91A6 /* Build configuration list for PBXNativeTarget "PersonalDiary" */;
+			buildPhases = (
+				E8FAE9451DE6E60F00FE91A6 /* Sources */,
+				E8FAE9461DE6E60F00FE91A6 /* Frameworks */,
+				E8FAE9471DE6E60F00FE91A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonalDiary;
+			productName = PersonalDiary;
+			productReference = E8FAE9491DE6E60F00FE91A6 /* PersonalDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8FAE9411DE6E60F00FE91A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = RJT;
+				TargetAttributes = {
+					E8FAE9481DE6E60F00FE91A6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 637NAX2FZ5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8FAE9441DE6E60F00FE91A6 /* Build configuration list for PBXProject "PersonalDiary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8FAE9401DE6E60F00FE91A6;
+			productRefGroup = E8FAE94A1DE6E60F00FE91A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8FAE9481DE6E60F00FE91A6 /* PersonalDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8FAE9471DE6E60F00FE91A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FAE95C1DE6E60F00FE91A6 /* LaunchScreen.storyboard in Resources */,
+				E8FAE9591DE6E60F00FE91A6 /* Assets.xcassets in Resources */,
+				E8FAE9571DE6E60F00FE91A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8FAE9451DE6E60F00FE91A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FAE9541DE6E60F00FE91A6 /* DiaryBookController.m in Sources */,
+				E8FAE9511DE6E60F00FE91A6 /* AppDelegate.m in Sources */,
+				E8A41B581DE8CDF500AA9806 /* DiaryContentController.m in Sources */,
+				E8DBCD3B1DEE2B9200D3EAE6 /* Utils.m in Sources */,
+				E8FAE94E1DE6E60F00FE91A6 /* main.m in Sources */,
+				E8FAE9661DE6E8BE00FE91A6 /* Diary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8FAE9551DE6E60F00FE91A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8FAE9561DE6E60F00FE91A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8FAE95A1DE6E60F00FE91A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8FAE95B1DE6E60F00FE91A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8FAE95E1DE6E60F00FE91A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E8FAE95F1DE6E60F00FE91A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8FAE9611DE6E60F00FE91A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 637NAX2FZ5;
+				INFOPLIST_FILE = PersonalDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rftcompuques.PersonalDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8FAE9621DE6E60F00FE91A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 637NAX2FZ5;
+				INFOPLIST_FILE = PersonalDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rftcompuques.PersonalDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8FAE9441DE6E60F00FE91A6 /* Build configuration list for PBXProject "PersonalDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FAE95E1DE6E60F00FE91A6 /* Debug */,
+				E8FAE95F1DE6E60F00FE91A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8FAE9601DE6E60F00FE91A6 /* Build configuration list for PBXNativeTarget "PersonalDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FAE9611DE6E60F00FE91A6 /* Debug */,
+				E8FAE9621DE6E60F00FE91A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8FAE9411DE6E60F00FE91A6 /* Project object */;
+}

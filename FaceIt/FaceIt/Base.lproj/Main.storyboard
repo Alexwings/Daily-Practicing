@@ -20,11 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8kt-0h-EYy" customClass="FaceView" customModule="FaceIt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8kt-0h-EYy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dNp-gr-cDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="8kt-0h-EYy" secondAttribute="trailing" id="e45-lr-28l"/>
+                            <constraint firstItem="8kt-0h-EYy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="wcU-tD-F90"/>
+                            <constraint firstItem="8kt-0h-EYy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zPV-lU-6lk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
