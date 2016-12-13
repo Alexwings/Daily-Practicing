@@ -29,8 +29,7 @@
 
 +(NSString *)getDocumentDir{
     NSFileManager *fm = [NSFileManager defaultManager];
-    NSString *docPath = [NSHomeDirectory() stringByAppendingPathComponent:@"diaries"];
-    NSLog(@"%@", docPath);
+    NSString *docPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/diaries"];
     BOOL isDir;
     [fm fileExistsAtPath:docPath isDirectory:&isDir];
     if(!isDir){
@@ -42,12 +41,14 @@
 -(void)updateDataOnDisk:(DiaryItem *)diary forFile:(NSString *)filename{
     NSString *suffixDate = [[filename componentsSeparatedByString:@"-->"] lastObject];
     NSString *newFilename = [NSString stringWithFormat:@"%@-->%@", diary.title, suffixDate];
-    NSInteger index = [self.diaryList indexOfObject:filename];
+    NSInteger index = [self.diaryList indexOfObject:diary];
     NSFileManager *fm = [NSFileManager defaultManager];
     NSString *docPath =[DiaryManager getDocumentDir];
+    NSLog(@"%@", docPath);
     [fm removeItemAtPath:[docPath stringByAppendingPathComponent:filename] error:nil];
-    [self.diaryList replaceObjectAtIndex:index withObject:newFilename];
-    [diary.content writeToFile:[docPath stringByAppendingPathComponent:newFilename] atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    diary.filename = newFilename;
+    [diary.content writeToFile:[[DiaryManager getDocumentDir] stringByAppendingPathComponent:diary.filename] atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    [self.diaryList replaceObjectAtIndex:index withObject:diary];
     if([self.delegate respondsToSelector:@selector(infoUpdated)]){
         [self.delegate infoUpdated];
     }
@@ -56,26 +57,21 @@
 -(void)loadDataFromDisk{
     NSFileManager *fm = [NSFileManager defaultManager];
     NSArray *paths = [fm contentsOfDirectoryAtPath:[DiaryManager getDocumentDir] error:nil];
-    self.diaryList = [paths mutableCopy];
-    [self.diaryList removeObjectAtIndex:0];
-    [self.diaryList sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
-        NSString *f1 = obj1;
-        NSString *f2 = obj2;
-        NSString *ds1 = [[[[f1 componentsSeparatedByString:@"-->"] lastObject] componentsSeparatedByString:@"."] firstObject];
-        NSString *ds2 = [[[[f2 componentsSeparatedByString:@"-->"] lastObject] componentsSeparatedByString:@"."] firstObject];
-        NSDateFormatter *dm = [[NSDateFormatter alloc]init];
-        dm.dateFormat = @"MM-dd-yyyy";
-        NSDate *d1 = [dm dateFromString:ds1];
-        NSDate *d2 = [dm dateFromString:ds2];
-        return [d1 compare:d2];
-    }];
+    for(NSString *p in paths){
+        NSString *docPath = [[DiaryManager getDocumentDir] stringByAppendingPathComponent:p];
+        NSString *title = [[p componentsSeparatedByString:@"-->"] firstObject];
+        NSString *content = [NSString stringWithContentsOfFile:docPath encoding:NSUTF8StringEncoding error:nil];
+        DiaryItem *item = [[DiaryItem alloc] initWithTitle:title andContent:content];
+        item.filename = p;
+        [self.diaryList addObject:item];
+    }
 }
 
 -(DiaryItem *)getDiaryFromDisk:(NSString *)filename{
-    NSString *filepath = [[DiaryManager getDocumentDir] stringByAppendingPathComponent:filename];
-    if([[NSFileManager defaultManager] fileExistsAtPath:filepath]){
-        DiaryItem *d = [[DiaryItem alloc] initWithTitle:[[filename componentsSeparatedByString:@"-->"] firstObject] andContent:[NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil]];
-        return d;
+    for(DiaryItem *item in self.diaryList){
+        if([item.filename isEqualToString: filename]){
+            return item;
+        }
     }
     return nil;
 }
@@ -85,9 +81,9 @@
     dm.dateFormat = @"MM-dd-yyyy";
     NSString *date = [dm stringFromDate:[NSDate date]];
     NSString *filename = [NSString stringWithFormat:@"%@-->%@.txt", diary.title, date];
-    NSString *path = [[DiaryManager getDocumentDir] stringByAppendingPathComponent:filename];
-    [diary.content writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
-    [self.diaryList addObject:filename];
+    diary.filename = filename;
+    [diary.content writeToFile:[[DiaryManager getDocumentDir] stringByAppendingPathComponent:filename] atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    [self.diaryList addObject:diary];
     if([self.delegate respondsToSelector:@selector(infoUpdated)]){
         [self.delegate infoUpdated];
     }

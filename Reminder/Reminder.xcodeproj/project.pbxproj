@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E87E08B31DF66065003E476A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E87E08B21DF66065003E476A /* main.m */; };
+		E87E08B61DF66065003E476A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E87E08B51DF66065003E476A /* AppDelegate.m */; };
+		E87E08BC1DF66065003E476A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87E08BA1DF66065003E476A /* Main.storyboard */; };
+		E87E08BE1DF66065003E476A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87E08BD1DF66065003E476A /* Assets.xcassets */; };
+		E87E08C11DF66065003E476A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87E08BF1DF66065003E476A /* LaunchScreen.storyboard */; };
+		E87E08CA1DF663BB003E476A /* past.plist in Resources */ = {isa = PBXBuildFile; fileRef = E87E08C91DF663BB003E476A /* past.plist */; };
+		E87E08CC1DF663DD003E476A /* upcomming.plist in Resources */ = {isa = PBXBuildFile; fileRef = E87E08CB1DF663DD003E476A /* upcomming.plist */; };
+		E87E08CF1DF66423003E476A /* MainEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87E08CE1DF66423003E476A /* MainEntranceViewController.m */; };
+		E87E08D21DF6672D003E476A /* ReminderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E87E08D11DF6672D003E476A /* ReminderManager.m */; };
+		E87E08D61DF6819A003E476A /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87E08D51DF6819A003E476A /* ReminderViewController.m */; };
+		E87E08D91DF696E7003E476A /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87E08D81DF696E7003E476A /* DatePickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E87E08AE1DF66065003E476A /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87E08B21DF66065003E476A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E87E08B41DF66065003E476A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E87E08B51DF66065003E476A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E87E08BB1DF66065003E476A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E87E08BD1DF66065003E476A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E87E08C01DF66065003E476A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E87E08C21DF66065003E476A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87E08C91DF663BB003E476A /* past.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = past.plist; sourceTree = "<group>"; };
+		E87E08CB1DF663DD003E476A /* upcomming.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = upcomming.plist; sourceTree = "<group>"; };
+		E87E08CD1DF66423003E476A /* MainEntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainEntranceViewController.h; sourceTree = "<group>"; };
+		E87E08CE1DF66423003E476A /* MainEntranceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainEntranceViewController.m; sourceTree = "<group>"; };
+		E87E08D01DF6672D003E476A /* ReminderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderManager.h; sourceTree = "<group>"; };
+		E87E08D11DF6672D003E476A /* ReminderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderManager.m; sourceTree = "<group>"; };
+		E87E08D41DF6819A003E476A /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		E87E08D51DF6819A003E476A /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		E87E08D71DF696E7003E476A /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		E87E08D81DF696E7003E476A /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E87E08AB1DF66065003E476A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E87E08A51DF66065003E476A = {
+			isa = PBXGroup;
+			children = (
+				E87E08B01DF66065003E476A /* Reminder */,
+				E87E08AF1DF66065003E476A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E87E08AF1DF66065003E476A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E87E08AE1DF66065003E476A /* Reminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E87E08B01DF66065003E476A /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				E87E08D31DF66739003E476A /* Model */,
+				E87E08C81DF66312003E476A /* data */,
+				E87E08B41DF66065003E476A /* AppDelegate.h */,
+				E87E08B51DF66065003E476A /* AppDelegate.m */,
+				E87E08CD1DF66423003E476A /* MainEntranceViewController.h */,
+				E87E08CE1DF66423003E476A /* MainEntranceViewController.m */,
+				E87E08D41DF6819A003E476A /* ReminderViewController.h */,
+				E87E08D51DF6819A003E476A /* ReminderViewController.m */,
+				E87E08BA1DF66065003E476A /* Main.storyboard */,
+				E87E08BD1DF66065003E476A /* Assets.xcassets */,
+				E87E08BF1DF66065003E476A /* LaunchScreen.storyboard */,
+				E87E08C21DF66065003E476A /* Info.plist */,
+				E87E08B11DF66065003E476A /* Supporting Files */,
+				E87E08D71DF696E7003E476A /* DatePickerViewController.h */,
+				E87E08D81DF696E7003E476A /* DatePickerViewController.m */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		E87E08B11DF66065003E476A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E87E08B21DF66065003E476A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E87E08C81DF66312003E476A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E87E08C91DF663BB003E476A /* past.plist */,
+				E87E08CB1DF663DD003E476A /* upcomming.plist */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		E87E08D31DF66739003E476A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E87E08D01DF6672D003E476A /* ReminderManager.h */,
+				E87E08D11DF6672D003E476A /* ReminderManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E87E08AD1DF66065003E476A /* Reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E87E08C51DF66065003E476A /* Build configuration list for PBXNativeTarget "Reminder" */;
+			buildPhases = (
+				E87E08AA1DF66065003E476A /* Sources */,
+				E87E08AB1DF66065003E476A /* Frameworks */,
+				E87E08AC1DF66065003E476A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reminder;
+			productName = Reminder;
+			productReference = E87E08AE1DF66065003E476A /* Reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E87E08A61DF66065003E476A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Private;
+				TargetAttributes = {
+					E87E08AD1DF66065003E476A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E87E08A91DF66065003E476A /* Build configuration list for PBXProject "Reminder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E87E08A51DF66065003E476A;
+			productRefGroup = E87E08AF1DF66065003E476A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E87E08AD1DF66065003E476A /* Reminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E87E08AC1DF66065003E476A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87E08CA1DF663BB003E476A /* past.plist in Resources */,
+				E87E08CC1DF663DD003E476A /* upcomming.plist in Resources */,
+				E87E08C11DF66065003E476A /* LaunchScreen.storyboard in Resources */,
+				E87E08BE1DF66065003E476A /* Assets.xcassets in Resources */,
+				E87E08BC1DF66065003E476A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E87E08AA1DF66065003E476A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87E08CF1DF66423003E476A /* MainEntranceViewController.m in Sources */,
+				E87E08D21DF6672D003E476A /* ReminderManager.m in Sources */,
+				E87E08B61DF66065003E476A /* AppDelegate.m in Sources */,
+				E87E08B31DF66065003E476A /* main.m in Sources */,
+				E87E08D91DF696E7003E476A /* DatePickerViewController.m in Sources */,
+				E87E08D61DF6819A003E476A /* ReminderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E87E08BA1DF66065003E476A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E87E08BB1DF66065003E476A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E87E08BF1DF66065003E476A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E87E08C01DF66065003E476A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E87E08C31DF66065003E476A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E87E08C41DF66065003E476A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E87E08C61DF66065003E476A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Reminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AlexW.Reminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E87E08C71DF66065003E476A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Reminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AlexW.Reminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E87E08A91DF66065003E476A /* Build configuration list for PBXProject "Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87E08C31DF66065003E476A /* Debug */,
+				E87E08C41DF66065003E476A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E87E08C51DF66065003E476A /* Build configuration list for PBXNativeTarget "Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87E08C61DF66065003E476A /* Debug */,
+				E87E08C71DF66065003E476A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E87E08A61DF66065003E476A /* Project object */;
+}

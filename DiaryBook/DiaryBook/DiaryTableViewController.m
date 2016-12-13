@@ -9,9 +9,11 @@
 #import "DiaryTableViewController.h"
 #import "addDiaryViewController.h"
 
-@interface DiaryTableViewController ()
+@interface DiaryTableViewController ()<UISearchResultsUpdating>
 
 @property (strong, nonatomic)UIBarButtonItem *addButton;
+@property (strong, nonatomic)NSArray *filteredDiaries;
+@property (strong, nonatomic)UISearchController *search;
 
 @end
 
@@ -24,11 +26,13 @@
     self.navigationItem.rightBarButtonItem = self.addButton;
     [DiaryManager sharedManager].delegate = self;
     [[DiaryManager sharedManager] loadDataFromDisk];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //add search controller
+    self.filteredDiaries = [[NSArray alloc] init];
+    self.search = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.search.dimsBackgroundDuringPresentation = false;
+    self.search.searchResultsUpdater = self;
+    self.tableView.tableHeaderView = self.search.searchBar;
+    self.definesPresentationContext = true;
 }
 
 -(void)addNewDiaryClicked{
@@ -47,6 +51,13 @@
     }
 }
 
+#pragma mark - UISearchResultUpdating
+-(void)updateSearchResultsForSearchController:(UISearchController *)searchController{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(SELF.filename contains %@) OR (SELF.content contains %@)", searchController.searchBar.text, searchController.searchBar.text];
+    self.filteredDiaries = [[DiaryManager sharedManager].diaryList filteredArrayUsingPredicate:predicate];
+    [self.tableView reloadData];
+}
+
 #pragma mark - InformationUpdatedDelegate
 -(void)infoUpdated{
     [self.tableView reloadData];
@@ -59,13 +70,20 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if(self.search.active && self.search.searchBar.text.length > 0){
+        return self.filteredDiaries.count;
+    }
     return [DiaryManager sharedManager].diaryList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     // Configure the cell...
-    cell.textLabel.text = [DiaryManager sharedManager].diaryList[indexPath.row];
+    if(self.search.active && self.search.searchBar.text.length > 0){
+        cell.textLabel.text = [self.filteredDiaries[indexPath.row] filename];
+    }else{
+        cell.textLabel.text = [[DiaryManager sharedManager].diaryList[indexPath.row] filename];
+    }
     return cell;
 }
 

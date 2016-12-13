@@ -40,6 +40,7 @@
     }
 }
 
+
 - (void)handleGesture:(UIGestureRecognizer *)sender{
     if(sender.state == UIGestureRecognizerStateEnded){
         CGPoint p = [sender locationInView:self.view];

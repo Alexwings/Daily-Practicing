@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic)NSString *title;
 @property (strong, nonatomic)NSString *content;
+@property (strong, nonatomic)NSString *filename;
 
 -(instancetype)initWithTitle:(NSString *)title andContent: (NSString *)content;
 

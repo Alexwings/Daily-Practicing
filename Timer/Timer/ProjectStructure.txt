@@ -1,0 +1,18 @@
+Requirements:
+    1. Build a timer application.
+    2. Display a text field to let the user input time
+    3. The input should be in seconds.
+    4. Use NSTimer to countdown from N to 0
+    5. Display the current value of the timer in a label
+Extra work:
+    6. User can make decision for the number of repeatition
+    7. User can click pause and continue button to pause and restart the timer
+    8. Make record for all the created timer.
+
+Structure Design:
+    1. a view for user to input duration and a create button should be added to the view
+    2. a view to display the countdown using a Label
+
+Model:
+    1. a timer object
+    2. a timer manager

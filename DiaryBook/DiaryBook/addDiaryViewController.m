@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
+@property (strong, nonatomic)DiaryItem *currentDiary;
 
 @end
 
@@ -28,17 +29,19 @@
     self.contentTextView.layer.borderWidth = 0.5;
     
     if(!self.isNew){
-        DiaryItem *d = [[DiaryManager sharedManager] getDiaryFromDisk:self.filename];
-        if(d){
-            self.titleTextField.text = d.title;
-            self.contentTextView.text = d.content;
+        self.currentDiary = [[DiaryManager sharedManager] getDiaryFromDisk:self.filename];
+        self.saveButton.style = UIBarButtonItemStylePlain;
+        [self.saveButton setTitle:@"update"];
+        if(self.currentDiary){
+            self.titleTextField.text = self.currentDiary.title;
+            self.contentTextView.text = self.currentDiary.content;
         }else{
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"File does not exists" message:@" " preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                [self dismissViewControllerAnimated:YES completion:^{
-                    [self.navigationController popViewControllerAnimated:YES];
-                }];
+                [self dismissViewControllerAnimated:YES completion:nil];
+                [self.navigationController popViewControllerAnimated:YES];
             }];
+            
             [alert addAction:action];
             [self presentViewController:alert animated:YES completion:nil];
         }
@@ -47,12 +50,14 @@
 
 -(void)saveButtonClicked{
     DiaryManager *dm = [DiaryManager sharedManager];
-    if(![self.titleTextField.text containsString:@"."] && self.contentTextView.text.length > 5){
-        DiaryItem *diary = [[DiaryItem alloc] initWithTitle:self.titleTextField.text andContent:self.contentTextView.text];
+    if(self.titleTextField.text.length > 0 && self.contentTextView.text.length > 5){
         if(self.isNew){
+            DiaryItem *diary = [[DiaryItem alloc] initWithTitle:self.titleTextField.text andContent:self.contentTextView.text];
             [dm saveDataOnDisk:diary];
         }else{
-            [dm updateDataOnDisk:diary forFile:self.filename];
+            self.currentDiary.title = self.titleTextField.text;
+            self.currentDiary.content = self.contentTextView.text;
+            [dm updateDataOnDisk:self.currentDiary forFile:self.filename];
         }
         [self.navigationController popViewControllerAnimated:YES];
     }else {

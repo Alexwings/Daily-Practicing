@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E825F99A1DF4EA78005A46C3 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825F9991DF4EA78005A46C3 /* FacialExpression.swift */; };
 		E85913351DE239C800C6A70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85913341DE239C800C6A70C /* AppDelegate.swift */; };
 		E85913371DE239C800C6A70C /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85913361DE239C800C6A70C /* FaceViewController.swift */; };
 		E859133A1DE239C800C6A70C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85913381DE239C800C6A70C /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E825F9991DF4EA78005A46C3 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		E85913311DE239C800C6A70C /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85913341DE239C800C6A70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E85913361DE239C800C6A70C /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				E859133B1DE239C800C6A70C /* Assets.xcassets */,
 				E859133D1DE239C800C6A70C /* LaunchScreen.storyboard */,
 				E85913401DE239C800C6A70C /* Info.plist */,
+				E825F9991DF4EA78005A46C3 /* FacialExpression.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85913371DE239C800C6A70C /* FaceViewController.swift in Sources */,
+				E825F99A1DF4EA78005A46C3 /* FacialExpression.swift in Sources */,
 				E85913351DE239C800C6A70C /* AppDelegate.swift in Sources */,
 				E860707B1DED3B38006668B3 /* FaceView.swift in Sources */,
 			);
